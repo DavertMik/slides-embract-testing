@@ -1,0 +1,66 @@
+body .reveal h1 {
+  font-family: 'Kreon', serif;
+  font-weight: bold;
+}
+
+body .reveal h1 {
+  font-size: 2em; 
+  font-weight: bold;
+}
+
+body .reveal h2 {
+  font-family: 'Kreon', serif;
+  font-size: 1.11em;
+  font-weight: bold; 
+}
+
+body .reveal h3 {
+  font-family: 'Kreon', serif;
+  font-weight: bold; 
+  font-size: 1em; 
+}
+
+body .reveal h4 {
+  font-family: 'Kreon', serif;  
+  font-weight: bold; 
+  font-size: 0.9em; 
+}
+
+body .reveal {
+  background: #FFF9C4;
+  font-family: 'Yanone Kaffeesatz';
+}
+
+body .reveal .slides {
+  background: #fff;
+  box-shadow: 10px 3px 40px #aaa;
+}
+
+body .reveal a {
+ text-decoration: underline; 
+}
+
+body .reveal table {
+  font-size: 0.6em;
+}
+
+body .reveal img {
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+body .reveal ul {
+  line-height: 1.5;
+}
+
+body .reveal pre code {
+  background: #F5F5F5;
+  color: #1d2a3a;  
+}
+
+body .reveal li>code, body .reveal p>code {
+  font-size: 0.7em;
+  font-weight: bold;
+  background: #fff;
+}
