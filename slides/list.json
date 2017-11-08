@@ -2,14 +2,14 @@
     {
         "filename": "index.md",
         "attr": {
-            "data-background": "/img/bigpyramid.jpg"
+            "data-background": "img/bigpyramid.jpg"
         }
     },
     "me.md",
     {
         "filename": "testing.md",
         "attr": {
-            "data-background": "/img/bigpyramid.jpg"
+            "data-background": "img/bigpyramid.jpg"
         }
 
     }
