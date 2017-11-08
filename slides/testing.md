@@ -11,16 +11,16 @@
 
 ---
 
-> We automate tests to execute them at any time
-
----
-
 ### What Tests We Can Automate
 
 * **To ensure software works as expected**
 * ~~To discover bugs in software (before users)~~
 * **To measure performance**
 * ~~To seek for security issues~~
+
+---
+
+> We automate tests to execute them at any time
 
 ---
 
@@ -32,22 +32,13 @@
 
 ---
 
-### No Automated Testing When
+### Testing is Told Us to Be Like This:
 
-* Features need to be delivered as fast as possible
-* Project won't be changed in future
-* Management is not interested in automated testing
+![](/img/owl.jpg)
 
 ---
 
-### What Is Hard To Test
-
-* Asynchronous interactions (JavaScript, Queues)
-* 3rd party APIs
-* Real data
-* Captchas
-
----
+We talk about how to test but we don't say
 
 ## What to Test
 
@@ -56,6 +47,7 @@
 ### Priority First
 
 * Crucial **business scenarios**
+* Security cases
 * Algorithms, functions with complex logic
 * Everything that is hard to test manually
 
@@ -142,6 +134,7 @@ $this->assertTrue($controller->view->user_id == 1);
 
 * Test should be stable by execution
 * Test should be stable to code changes
+* Test should focus on result not on the path
 
 ---
 
@@ -203,7 +196,7 @@ $formFactory
   * < 20 s
 * For all tests
   * should be run on CI
-  * easy to split into parallel thereads
+  * easy to split into parallel processes
   * < 20 min
 
 ---
@@ -212,6 +205,10 @@ $formFactory
 
 * Should we sacrifice readability for speed?
 * If so, why do you develop in PHP and not in C?
+
+---
+
+> Think how you can test a feature with minimal effort
 
 ---
 
@@ -228,11 +225,7 @@ Let's talk about implementation
 
 ---
 
-> Think how you can test a feature with minimal effort
-
----
-
-![](/img/pyramid.png)
+![](img/pyramid.png)
 
 ---
 
@@ -249,12 +242,12 @@ Let's talk about implementation
 ---
 
 
-![](/img/pros-cons.svg)
+![](img/pros-cons.svg)
 
 
 ---
 
-![](/img/test-layers.png)
+![](img/test-layers.png)
 
 ---
 
@@ -318,6 +311,7 @@ Let's talk about implementation
   * pure functions
   * algorithms
   * complex data
+  * dozen execution paths
 * Integration tests for
   * everything else
 
@@ -332,6 +326,10 @@ Let's talk about implementation
   * Async services
   * 3rd-party services
   * Remote services
+
+---
+
+> Even you can write a unit test with mocks it doesn't mean you should
 
 ---
 
@@ -356,5 +354,5 @@ Let's talk about implementation
 ... or holywars 😇
 
 * **Michael Bodnarchuk** @davert
-* Author of Codeception Testing Framework
-* Consultant & Trainer at SDCLabs
+* Author of [Codeception](http://codeception.com) Testing Framework
+* Consultant & Trainer at **[SDCLabs](http://sdclabs.com)**
