@@ -100,11 +100,13 @@ Scenario: registering successfully
 
 ---
 
-## Readability
+# Readability
 
-* Test should be easy to follow
-* Test should be simple to update 
-* Code can be reused to test all similar cases
+---
+
+* #### Test should be easy to follow
+* #### Test should be simple to update 
+* #### Code can be reused to test similar cases
 
 ---
 
@@ -130,25 +132,12 @@ $this->assertTrue($controller->view->user_id == 1);
 
 ---
 
-## Stability
-
-* Test should be stable by execution
-* Test should be stable to code changes
-* Test should focus on result not on the path
+# Stability
 
 ---
 
-# 😱 
-
-Codeception + WebDriver
-
-```php
-// what if HTML changes?
-$I->click('//body/div[3]/p[1]/div[2]/div/span');
-
-// what if browser will render it longer?
-$I->wait(1);
-```
+* #### Test should be stable by execution
+* #### Test should be stable to changes
 
 ---
 
@@ -169,17 +158,75 @@ $formFactory
 
 ---
 
+# 😱 
+
+Codeception + WebDriver
+
+```php
+// what if HTML changes?
+$I->click('//body/div[3]/p[1]/div[2]/div/span');
+
+// what if browser will render it longer?
+$I->wait(1);
+```
+
+---
+
 
 ### How to write stable tests
 
 * Don't mix specification with implementation
-* Use public interfaces (API) for tests
+* Use interfaces for tests
+* Focus on result, not on the path
 
 [Blogpost: Expectation vs Implementation](http://codeception.com/12-21-2016/writing-better-tests-expectation-vs-implementation.html)
 
 ---
 
-### Questions To Be Asked
+### Interfaces???
+
+
+<img src="img/webinterface.png" style="float: left; width: 45%;">
+<img src="img/interface.png" style="float: right; width: 45%;">
+
+---
+
+### What are Interfaces
+
+* Interface define rules to get things done
+* Interfaces considered stable
+* Interface is not just a keyword
+
+---
+
+### 5 stages of interface change
+
+![](img/grief.png)
+
+---
+
+### Anchor Tests To Stable Parts:
+
+* Web Interface
+* Public API (REST, GraphQL, SOAP)
+* PHP Interfaces
+* Public Methods in Domain
+
+---
+
+## Consider What Is Stable For You
+
+---
+
+## Can we test private methods?
+
+* **Technically**: yes
+* **Ideally**: no
+* **Practically**: yes, if you consider them stable
+
+---
+
+### Focus On Result
 
 * Will the test have to duplicate exactly the application code?
 * Will assertions in the test duplicate any behavior covered by library code?
@@ -189,12 +236,14 @@ $formFactory
 
 ---
 
-## Speed
+# Speed
 
-* For one test case:
+---
+
+* #### For one test case:
   * fast enough for instant feedback
   * < 20 s
-* For all tests
+* #### For all tests
   * should be run on CI
   * easy to split into parallel processes
   * < 20 min
@@ -251,57 +300,33 @@ Let's talk about implementation
 
 ---
 
-## How To Test
+# How to build test architecture?
 
-* Write down specification
+---
+
+## What To Test
+
+* Write down specifications
+* Choose specifications which should be tested
 * Write examples for specification
 * Choose the testing layer
-
 
 ---
 
 > The more specific example we need to test the more detailed layer we choose.
 
----
-
-## New Project. How to test?
-
-* Domain Layer should have unit / integration tests
-* Application layer should have integration / functional tests
-* UI should have acceptance tests with positive scenarios
 
 ---
 
-## Early Stages Startup. How to test?
+### Acceptance vs Functional vs Unit
 
-* Uncertanity Problem:
-  * We don't have strict requirements
-  * We can do pivot any day
-  * We are unsure of EVERYTHING 😨
-* Solution:
-  * Test only when you stablizie the code
-  * Start with Public API, Domain Logic
-
----
-
-## Legacy Project. How to test?
-
-* Detect the critical parts of a system
-* Write acceptance tests for them
-* Refactor old code
-* Cover the new code with unit tests
-
----
-
-# How about?...
-
----
-
-## Data Management & Cleanup
-
-* create unique data per test
-* clean up database between tests
-* create data for test and revert afterwards
+1. Choose a testing layer where test would be
+  * Readable
+  * Stable
+  * Fast enough
+1. Write a test
+1. Repeat
+1. Refactor!
 
 ---
 
@@ -335,9 +360,52 @@ Let's talk about implementation
 
 ## TDD || !TDD
 
-* Is a personal preference
-* Hard to start (nothing is reliable)
+* Is a team choice
+* Hard to start (nothing is stable)
 * Use TDD to discover specifications
+* Plays nicely with outer and inner testing
+
+---
+
+## BDD || !BDD
+
+* Writing tests in English is not about BDD at all
+* BDD has its cost
+* Use BDD when non-technical mates involved
+  * *(when management is actually going to read your tests)*
+
+---
+
+# Test Architecture Templates
+
+---
+
+## New Project. How to test?
+
+* Domain Layer should have unit / integration tests
+* Application layer should have integration / functional tests
+* UI should have acceptance tests with positive scenarios
+
+---
+
+## Early Stages Startup. How to test?
+
+* Uncertainty Problem:
+  * We don't have strict requirements
+  * We can do pivot any day
+  * We are unsure of EVERYTHING 😨
+* Solution:
+  * Test only when you stabilize the code
+  * Start with Public API, Domain Logic
+
+---
+
+## Legacy Project. How to test?
+
+* Detect the critical parts of a system
+* Write acceptance tests for them
+* Refactor old code
+* Cover the new code with unit tests
 
 ---
 

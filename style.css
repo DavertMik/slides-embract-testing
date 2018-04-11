@@ -27,13 +27,14 @@ body .reveal h4 {
 }
 
 body .reveal {
-  background: #FFF9C4;
+  border-top: 15px solid #48306a;
   font-family: 'Yanone Kaffeesatz';
 }
 
 body .reveal .slides {
-  background: #fff;
-  box-shadow: 10px 3px 40px #aaa;
+  /*background: #fff;*/
+  /*border: 5px dashed #999;*/
+  /*box-shadow: 10px 3px 40px #aaa;*/
 }
 
 body .reveal a {

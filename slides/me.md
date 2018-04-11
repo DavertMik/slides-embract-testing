@@ -3,23 +3,12 @@
 
 * Michael Bodnarchuk **@davert**
 * Web developer from Kyiv, Ukraine
-* Lead developer of **Codeception**
+* Lead developer of **Codeception** testing framework
 * Also author of CodeceptJS, Robo and others
 * Tech **Consultant**, CTO at SDCLabs 
 
 ---
 
-## My Experience
+## Open Source Lover & Conference Speaker
 
-* 10+ years in web development
-* Writing tests since 2008
-* Languages: PHP, Ruby, JavaScript
-
----
-
-## My Vision
-
-* Tests should be simple to write and understand
-* Tests have their priority. Don't write tests for everything
-* Tests should follow business values
-* Testing should be joyful
+![](img/talk-map-2017.png)
