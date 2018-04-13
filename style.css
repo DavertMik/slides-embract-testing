@@ -1,6 +1,7 @@
 body .reveal h1 {
   font-family: 'Kreon', serif;
   font-weight: bold;
+  color: #000;
 }
 
 body .reveal h1 {
@@ -12,18 +13,21 @@ body .reveal h2 {
   font-family: 'Kreon', serif;
   font-size: 1.11em;
   font-weight: bold; 
+  color: #000;
 }
 
 body .reveal h3 {
   font-family: 'Kreon', serif;
   font-weight: bold; 
-  font-size: 1em; 
+  font-size: 1em;
+  color: #000; 
 }
 
 body .reveal h4 {
   font-family: 'Kreon', serif;  
   font-weight: bold; 
-  font-size: 0.9em; 
+  font-size: 0.9em;
+  color: #000; 
 }
 
 body .reveal {
@@ -35,6 +39,7 @@ body .reveal .slides {
   /*background: #fff;*/
   /*border: 5px dashed #999;*/
   /*box-shadow: 10px 3px 40px #aaa;*/
+  color: #000;
 }
 
 body .reveal a {
