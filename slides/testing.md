@@ -34,7 +34,7 @@
 
 ### Testing is Told Us to Be Like This:
 
-![](/img/owl.jpg)
+![](img/owl.jpg)
 
 ---
 
@@ -110,7 +110,6 @@ Scenario: registering successfully
 
 ---
 
-# 😞
 
 ```php
 $request = $this->getRequest()
@@ -130,6 +129,8 @@ $this->assertTrue($controller->profileAction());
 $this->assertTrue($controller->view->user_id == 1);         
 ```
 
+# 😞
+
 ---
 
 # Stability
@@ -141,7 +142,6 @@ $this->assertTrue($controller->view->user_id == 1);
 
 ---
 
-# 😧
 
 ```php
 $mock = $this->getMock('Client', array('getInputFilter'));
@@ -156,9 +156,10 @@ $formFactory
     ->will($this->returnValue($form))    
 ```
 
+# 😧
+
 ---
 
-# 😱 
 
 Codeception + WebDriver
 
@@ -169,6 +170,8 @@ $I->click('//body/div[3]/p[1]/div[2]/div/span');
 // what if browser will render it longer?
 $I->wait(1);
 ```
+
+# 😱 
 
 ---
 
