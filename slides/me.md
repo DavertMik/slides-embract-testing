@@ -1,3 +1,14 @@
+## A week ago in Odessa
+
+![](img/odessa.jpg)
+
+---
+
+## I'm from
+
+![](img/ukraine.jpg)
+
+---
 
 ##  About me 
 
@@ -9,13 +20,8 @@
 
 ---
 
-## I'm from
 
-![](img/ukraine.jpg)
-
----
-
-## We struggle REAL Russian intervention
+## We also have problems with Russians 
 
 ![](img/ukraine-conflict.jpg)
 
