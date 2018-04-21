@@ -1,21 +1,5 @@
 [
-    {
-        "filename": "index.html",
-        "attr": {
-            "data-background-color": "#48306a"
-        }
-    },
-    {
-        "filename": "me.md",   
-        "attr": {
-            "data-background": "#f4f3f3"
-        }
-    },
-    {
-        "filename": "testing.md",
-        "attr": {
-            "data-background": "#f4f3f3"
-        }
-
-    }
+    "index.html",
+    "me.md",   
+    "testing.md"
 ]

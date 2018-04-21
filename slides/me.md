@@ -9,6 +9,21 @@
 
 ---
 
-## Open Source Lover & Conference Speaker
+## I'm from
 
-![](img/talk-map-2017.png)
+![](img/ukraine.jpg)
+
+---
+
+## We struggle REAL Russian intervention
+
+![](img/ukraine-conflict.jpg)
+
+---
+
+## What our IT is like
+
+* Outsource companies
+* Magento office
+* We ❤️ Symfony, Yii, Phalcon, Laravel
+* IT engineers are rich!

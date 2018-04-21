@@ -178,11 +178,50 @@ $I->wait(1);
 
 ### How to write stable tests
 
-* Don't mix specification with implementation
-* Use interfaces for tests
+* **Don't mix specification with implementation**
 * Focus on result, not on the path
+* Use interfaces for tests
+
+---
+
+### We Need A Table
+
+![](img/hammer.jpg)
+
+---
+
+### JUST BUY IT
+
+![](img/ikea.jpg)
 
 [Blogpost: Expectation vs Implementation](http://codeception.com/12-21-2016/writing-better-tests-expectation-vs-implementation.html)
+
+---
+
+### How to write stable tests
+
+* Don't mix specification with implementation
+* **Focus on result, not on the path**
+* Use interfaces for tests
+
+---
+
+### Focus On Result
+
+* Will the test have to duplicate exactly the application code?
+* Will assertions in the test duplicate any behavior covered by library code?
+* Is this detail important, or is it only an internal concern?
+
+[Blogpost: The Right Way To Test React Components](https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22)
+
+---
+
+### How to write stable tests
+
+* Don't mix specification with implementation
+* Focus on result, not on the path
+* **Use interfaces for tests**
+
 
 ---
 
@@ -226,16 +265,6 @@ $I->wait(1);
 * **Technically**: yes
 * **Ideally**: no
 * **Practically**: yes, if you consider them stable
-
----
-
-### Focus On Result
-
-* Will the test have to duplicate exactly the application code?
-* Will assertions in the test duplicate any behavior covered by library code?
-* Is this detail important, or is it only an internal concern?
-
-[Blogpost: The Right Way To Test React Components](https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22)
 
 ---
 
@@ -363,17 +392,17 @@ Let's talk about implementation
 
 ## TDD || !TDD
 
-* Is a team choice
 * Hard to start (nothing is stable)
+* Build on top of interfaces
 * Use TDD to discover specifications
-* Plays nicely with outer and inner testing
 
 ---
 
 ## BDD || !BDD
 
 * Writing tests in English is not about BDD at all
-* BDD has its cost
+* BDD transforms specification to tests
+* BDD has its cost (additional abstraction layer)
 * Use BDD when non-technical mates involved
   * *(when management is actually going to read your tests)*
 
@@ -395,7 +424,7 @@ Let's talk about implementation
 
 * Uncertainty Problem:
   * We don't have strict requirements
-  * We can do pivot any day
+  * We can do a pivot any day
   * We are unsure of EVERYTHING 😨
 * Solution:
   * Test only when you stabilize the code
@@ -414,15 +443,13 @@ Let's talk about implementation
 
 ## Conclusions
 
-* Discover what to test
-* Find a suitable level of testing
-* Write readable+stable+fast tests!
+1. Discover what to test
+2. Find a suitable level of testing
+3. Write readable+stable+fast tests!
 
 ---
 
 ## Questions!
-
-... or holywars 😇
 
 * **Michael Bodnarchuk** @davert
 * Author of [Codeception](http://codeception.com) Testing Framework
