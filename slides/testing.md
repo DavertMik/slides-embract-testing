@@ -390,6 +390,24 @@ Let's talk about implementation
 
 ---
 
+### Testing Layered Architecture
+
+*  Test should use classes of the same layer as tested
+*  Test may use services from other bundles when needed
+
+---
+
+ProductServiceTest
+
+* can use 
+  * `ProductBundle\ProductService`
+  * `UserBundle\UserService`
+* should not use
+  *  `ProductBundle\ProductRepository`
+  *  `UserBundle\UserRepository`
+
+---
+
 ## TDD || !TDD
 
 * Hard to start (nothing is stable)
