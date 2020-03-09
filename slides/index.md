@@ -1,12 +1,4 @@
 
-
-<!-- -- data-background="#eee" -->
-
-## Constructing a Test Pyramid: 
-
-### Because Your Tests Needs Architecture Too
-
-
-PHP CE 2017
+## Embrace the world of automated testing with Codeception.
 
 *Michael Bodnarchuk @davert*

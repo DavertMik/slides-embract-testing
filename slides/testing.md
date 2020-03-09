@@ -161,7 +161,7 @@ $formFactory
 ---
 
 
-Codeception + WebDriver
+in Browser testing
 
 ```php
 // what if HTML changes?
@@ -184,20 +184,6 @@ $I->wait(1);
 
 ---
 
-### We Need A Table
-
-![](img/hammer.jpg)
-
----
-
-### JUST BUY IT
-
-![](img/ikea.jpg)
-
-[Blogpost: Expectation vs Implementation](http://codeception.com/12-21-2016/writing-better-tests-expectation-vs-implementation.html)
-
----
-
 ### How to write stable tests
 
 * Don't mix specification with implementation
@@ -214,36 +200,6 @@ $I->wait(1);
 
 [Blogpost: The Right Way To Test React Components](https://medium.freecodecamp.org/the-right-way-to-test-react-components-548a4736ab22)
 
----
-
-### How to write stable tests
-
-* Don't mix specification with implementation
-* Focus on result, not on the path
-* **Use interfaces for tests**
-
-
----
-
-### Interfaces???
-
-
-<img src="img/webinterface.png" style="float: left; width: 45%;">
-<img src="img/interface.png" style="float: right; width: 45%;">
-
----
-
-### What are Interfaces
-
-* Interface define rules to get things done
-* Interfaces considered stable
-* Interface is not just a keyword
-
----
-
-### 5 stages of interface change
-
-![](img/grief.png)
 
 ---
 
@@ -253,18 +209,6 @@ $I->wait(1);
 * Public API (REST, GraphQL, SOAP)
 * PHP Interfaces
 * Public Methods in Domain
-
----
-
-## Consider What Is Stable For You
-
----
-
-## Can we test private methods?
-
-* **Technically**: yes
-* **Ideally**: no
-* **Practically**: yes, if you consider them stable
 
 ---
 
@@ -320,11 +264,6 @@ Let's talk about implementation
   * Integration: Service with its dependencies
   * Unit: Service in pure isolation
 
----
-
-
-![](img/pros-cons.svg)
-
 
 ---
 
@@ -360,115 +299,3 @@ Let's talk about implementation
 1. Repeat
 1. Refactor!
 
----
-
-## Unit vs Integration Tests
-
-* Unit Tests for
-  * pure functions
-  * algorithms
-  * complex data
-  * dozen execution paths
-* Integration tests for
-  * everything else
-
----
-
-## Mocks
-
-* Are dangerous:
-  * Affect readability 
-  * Affect stability
-* Should be used for
-  * Async services
-  * 3rd-party services
-  * Remote services
-
----
-
-> Even you can write a unit test with mocks it doesn't mean you should
-
----
-
-### Testing Layered Architecture
-
-*  Test should use classes of the same layer as tested
-*  Test may use services from other bundles when needed
-
----
-
-ProductServiceTest
-
-* can use 
-  * `ProductBundle\ProductService`
-  * `UserBundle\UserService`
-* should not use
-  *  `ProductBundle\ProductRepository`
-  *  `UserBundle\UserRepository`
-
----
-
-## TDD || !TDD
-
-* Hard to start (nothing is stable)
-* Build on top of interfaces
-* Use TDD to discover specifications
-
----
-
-## BDD || !BDD
-
-* Writing tests in English is not about BDD at all
-* BDD transforms specification to tests
-* BDD has its cost (additional abstraction layer)
-* Use BDD when non-technical mates involved
-  * *(when management is actually going to read your tests)*
-
----
-
-# Test Architecture Templates
-
----
-
-## New Project. How to test?
-
-* Domain Layer should have unit / integration tests
-* Application layer should have integration / functional tests
-* UI should have acceptance tests with positive scenarios
-
----
-
-## Early Stages Startup. How to test?
-
-* Uncertainty Problem:
-  * We don't have strict requirements
-  * We can do a pivot any day
-  * We are unsure of EVERYTHING 😨
-* Solution:
-  * Test only when you stabilize the code
-  * Start with Public API, Domain Logic
-
----
-
-## Legacy Project. How to test?
-
-* Detect the critical parts of a system
-* Write acceptance tests for them
-* Refactor old code
-* Cover the new code with unit tests
-
----
-
-## Conclusions
-
-1. Discover what to test
-2. Find a suitable level of testing
-3. Write readable+stable+fast tests!
-
----
-
-## Questions!
-
-* **Michael Bodnarchuk** @davert
-* Author of [Codeception](http://codeception.com) Testing Framework
-* Consultant & Trainer at **[SDCLabs](http://sdclabs.com)**

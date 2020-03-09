@@ -1,5 +1,9 @@
 [
-    "index.html",
+    "index.md",
     "me.md",   
-    "testing.md"
+    "testing.md",
+    "component.md",
+    "codeception.md",
+    "codeceptjs.md",
+    "recap.md"
 ]

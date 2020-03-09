@@ -6,10 +6,12 @@
 
 ## Codeception
 
+* written in PHP
 * **full stack** testing framework
 * modules to solve **90% of common tasks**
 * **unified APIs** for all modules
-* **>5M** installations on Packagist
+* **>15M** installations on Packagist
+* opensource, MIT license
 
 ---
 
@@ -246,47 +248,8 @@ Codeception supports multiple test formats:
 
 ---
 
-## Conception
+## Limitations
 
----
-
-### Goals
-
-* separate test code from support code
-* separate configuration for test
-* separate different test types by suites
-
----
-
-### Basic Concepts
-
-* **Actor** - object representing a person who performs a test
-* **Suite** - group of tests with same config
-* **Module** - predefined set of actions for the actor
-* **Helper** - customized set of actions for the actor
-* **Cest** - default test format of Codeception
-
----
-
-### File Structure
-
-
-| Files  | Description  |
-|---|---|
-| ```codeception.yml ```| global config |
-| ```tests/```          | tests directory |
-| ```  _data/ ```       | permanent files used in tests |
-| ```  _support/ ```    | support classes: Actors, Helpers |
-| ```  _output/ ```             | temporary files created by tests |
-| ```  acceptance/ ```          | tests of "acceptance" suite  |
-| ```  acceptance.suite.yml```  | "acceptance" suite config |
-
----
-
-## Conclusion
-
-* Codeception includes all-layers testing
-* Codeception provides scenario DSL
-* Codeception comes with predefined modules
-* Codeception separates tests from config/support
-* Codeception has BDD support
+* how to test native mobile apps?
+* how to make web testing faster?
+* how to test frontend components?
